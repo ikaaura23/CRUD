@@ -8,6 +8,8 @@ from fisip.views import indexfisip
 from fk.views import indexfk
 from ft.views import indexft
 from pascasarjana.views import indexpascasarjana
+from profil.views import indexprofil
+from universitas.views import indexuniversitas
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('fkip/', indexfkip),
@@ -18,4 +20,6 @@ urlpatterns = [
     path('fk/', indexfk),
     path('ft/', indexft),
     path('pascasarjana/', indexpascasarjana),
+    path('profil/', indexprofil),
+    path('universitas/', indexuniversitas),
 ]
