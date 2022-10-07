@@ -5,4 +5,3 @@ from feb.models import Dosen, Tendik, Mahasiswa
 admin.site.register(Dosen)
 admin.site.register(Tendik)
 admin.site.register(Mahasiswa)
-
