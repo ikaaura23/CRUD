@@ -23,6 +23,7 @@ class Tendik(models.Model):
     Email = models.CharField(max_length=200)
     Unit = models.CharField(max_length=200)
     Alamatrumah = models.TextField(max_length=200)
+    
     def __str__(self):
         return self.Nama
 

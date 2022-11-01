@@ -99,6 +99,99 @@
     <hr>
     <br>
     <hr>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <th>NIP</th>
+                        <th>NAMA</th>
+                        <th>TANGGAL LAHIR</th>
+                        <th>PHOTO</th>
+                        <th>EMAIL</th>
+                        <th>FAKULTAS</th>
+                        <th>PRODI</th>
+                        <th>ALAMAT</th>
+                    </thead>
+                    <tbody>
+                       {% for Dosen in books %} 
+                       <tr>
+                        <td>{{ Dosen.NIP }}</td>
+                        <td>{{ Dosen.nama }}</td>
+                        <td>{{ Dosen.tanggallahir }}</td>
+                        <td>{{ Dosen.photo }}</td>
+                        <td>{{ Dosen.email }}</td>
+                        <td>{{ Dosen.fakultas }}</td>
+                        <td>{{ Dosen.alamat }}</td>
+                       </tr>
+                       {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <th>NIP</th>
+                        <th>NAMA</th>
+                        <th>TANGGAL LAHIR</th>
+                        <th>PHOTO</th>
+                        <th>EMAIL</th>
+                        <th>FAKULTAS</th>
+                        <th>PRODI</th>
+                        <th>ALAMAT</th>
+                    </thead>
+                    <tbody>
+                       {% for Mahasiswa in books %} 
+                       <tr>
+                        <td>{{ Dosen.NIM }}</td>
+                        <td>{{ Dosen.nama }}</td>
+                        <td>{{ Dosen.tanggallahir }}</td>
+                        <td>{{ Dosen.photo }}</td>
+                        <td>{{ Dosen.email }}</td>
+                        <td>{{ Dosen.fakultas }}</td>
+                        <td>{{ Dosen.prodi }}</td>
+                       </tr>
+                       {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <th>NIP</th>
+                        <th>NAMA</th>
+                        <th>TANGGAL LAHIR</th>
+                        <th>PHOTO</th>
+                        <th>EMAIL</th>
+                        <th>FAKULTAS</th>
+                        <th>PRODI</th>
+                        <th>ALAMAT</th>
+                    </thead>
+                    <tbody>
+                       {% for Tendik in books %} 
+                       <tr>
+                        <td>{{ Dosen.NIP }}</td>
+                        <td>{{ Dosen.nama }}</td>
+                        <td>{{ Dosen.tanggallahir }}</td>
+                        <td>{{ Dosen.photo }}</td>
+                        <td>{{ Dosen.email }}</td>
+                        <td>{{ Dosen.fakultas }}</td>
+                        <td>{{ Dosen.alamat }}</td>
+                       </tr>
+                       {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
 
 </body>
 </html>

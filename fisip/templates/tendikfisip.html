@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAPERTA</title>
+</head>
+<body>
+    <center>
+    <h1>Universitas Sultan Ageng Tirtayasa</h1>
+</center>
+    {% if pesan %}
+    <div>{{ pesan }}</div>
+    {% endif %}
+
+    <form action="/tendikfisip/" method="post">
+
+       {% csrf_token %}
+    {{ form.as_p }}
+    
+    <button>Add</button>
+    </form>
+</body>
+</html>
+
+<style>
+    body {
+        background-image: linear-gradient(to right, #ffaebc, #6af2f0);
+			-webkit-text-size-adjust: 100%;
+            font-family: 'GILL sans', 'GILL Sans MT', Calibri, 'Trebuchet MS';
+      margin-left: 40px;
+      margin-right: 40px;
+    }
+</style>
